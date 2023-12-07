@@ -3,7 +3,7 @@
 name: CI
 
 permissions:
-  contents: write
+  contents: read
 
 # Controls when the workflow will run
 on:
@@ -38,5 +38,5 @@ jobs:
           sudo su
           echo Add other actions to build,
           echo test, and deploy your project.
-          apt update
-          apt install -y libgl-dev
+          sudo apt-get update
+          sudo apt-get install -y libgl-dev
